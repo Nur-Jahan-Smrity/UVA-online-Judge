@@ -29,16 +29,22 @@ void solve()
             break;
         map<ll,ll>mp1;
         // map<ll,ll>mp2;
-        ll aa[a+5]= {0},bb[b+5]= {0},count=0;
+       // ll aa[a+5]= {0},bb[b+5]= {0};
+        ll count=0;
+        //as we don't need to store the array element for further use so we dont need to take input using array .. just use normal variable ..it will save space ..
         for(ll i=0; i<a; i++)
         {
-            cin>>aa[i];
-            mp1[aa[i]]=1;
+            //cin>>aa[i];
+            ll aa;
+            cin>>aa;
+            mp1[aa]=1;
         }
         for(ll i=0; i<b; i++)
         {
-            cin>>bb[i];
-            if(mp1[bb[i]]==1)
+            //cin>>bb[i];
+            ll bb;
+            cin>>bb;
+            if(mp1[bb]==1)
             {
                 count++;
             }
